@@ -1,0 +1,18 @@
+package sukkiri.chapter05;
+
+public class Main0513 {
+    //int型配列を受け取り
+	//配列ないの要素すべてに1を加えるメソッド
+	public static void incArray(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			array[i]++;
+		}
+	}
+    public static void main(String[] args) {
+    	int[] array = {1, 2, 3};
+    	incArray(array);
+    	for(int i : array) {
+    		System.out.println(i);
+    	}
+    }
+}
